@@ -18,8 +18,7 @@ public class Main {
             // UML: HotelChain creates ReserverPayer
             myChain.createReserverPayer("P-5501", "1234567812345678");
             
-            // Dummy logic to get the payer from list for testing
-            // Asal system mein search logic hoti hai
+          
             ReserverPayer payer = ReserverPayer.create("P-5501", "1234567812345678");
 
             // 4. Reservation banana (Dates set karna)
