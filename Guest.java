@@ -9,6 +9,12 @@ public class Guest {
         this.name = name;
         this.addressDetails = addressDetails;
     }
+    public String getName() {
+        return name;
+    }   
+    public String getAddressDetails() {
+        return addressDetails;
+    }
     
     public static Guest create(String name, String addressDetails) {
         return new Guest(name, addressDetails);
