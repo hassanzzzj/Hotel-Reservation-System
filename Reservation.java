@@ -14,7 +14,7 @@ public class Reservation {
     private List<Room> rooms;
 
     // Constructor (UML: create())
-    public Reservation(Date start, Date end, RoomType type, int num) {
+    private Reservation(Date start, Date end, RoomType type, int num) {
         // Defensive Programming: Dates aur RoomType validate karna [cite: 25]
         if (end.before(start)) {
             throw new IllegalArgumentException("End date cannot be before start date");
@@ -30,7 +30,9 @@ public class Reservation {
         this.roomType = type;
         this.rooms = new ArrayList<>();
     }
-
+    public static Reservation create(Date start, Date end, RoomType type, int num) {
+        return new Reservation(start, end, type, num);
+    }
     // Method to link actual rooms to this reservation
     public void addRoom(Room room) {
         if (room != null) {

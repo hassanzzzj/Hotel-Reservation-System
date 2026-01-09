@@ -26,8 +26,7 @@ public class Main {
             Date nextWeek = new Date(today.getTime() + (7 * 24 * 60 * 60 * 1000));
             
             // UML: Reservation link with RoomType and Quantity (HowMany)
-            Reservation myRes = new Reservation(today, nextWeek, luxury, 1);
-            
+            Reservation myRes = Reservation.create(today, nextWeek, luxury, 1);            
             // 5. Payer ko Reservation ke saath link karna
             myChain.makeReservation(payer, myRes);
 
