@@ -32,6 +32,7 @@ Hotel-Reservation-System/
 │   ├── RoomTypeTest.java, How_ManyTest.java
 │   └── IntegrationTest.java
 └── README.md
+```
 🧪 Testing (AAA Methodology)
 Har functionality ko test karne ke liye teen steps follow kiye gaye hain:
 
@@ -56,12 +57,10 @@ Bash
 git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
 Compile Core Files:
 
-Bash
 
 javac Main.java
 Run Application:
 
-Bash
 
 java Main
 📊 Class Relationships
