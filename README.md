@@ -1,71 +1,72 @@
-# 🏨 Hotel Reservation System (OOP Logic)
+# 🏨 Hotel Reservation System (Java OOP with AAA Testing)
 
-A comprehensive **Object-Oriented Programming (OOP)** implementation of a Hotel Management System. This project is built using **Java** and focuses on the logical structure of managing hotel chains, room allocations, and guest bookings using in-memory data structures.
-
----
-
-## 📖 Project Overview
-Unlike typical database-driven apps, this project demonstrates how to structure complex real-world systems using Java classes and relationships. It manages everything from individual rooms to entire hotel chains.
+A structured **Object-Oriented Programming (OOP)** project that simulates a Hotel Management System. This repository focuses on clean code principles, class relationships, and robust testing using the **AAA (Arrange, Act, Assert)** methodology.
 
 ---
 
 ## 🚀 Key Features
-* **Hierarchical Management:** Manages multiple hotels under a single `Hotel_Chain`.
-* **Room Classification:** Support for various `RoomTypes` (Single, Double, Suite, etc.).
-* **Guest & Payer Tracking:** Separate logic for `Guest` details and the `ReserverPayer` responsible for billing.
-* **Reservation System:** Core engine to link guests with specific rooms and dates.
-* **Dynamic Capacity:** Uses Java Collections to handle data during the application lifecycle.
+* **Full Booking Lifecycle:** Manage hotels, rooms, and guest reservations.
+* **OOP Architecture:** Uses Encapsulation, Enums, and Collections.
+* **In-Memory Data:** Fast and efficient handling of data objects during runtime.
+* **Testing Suite:** Comprehensive unit and integration tests for all core modules.
 
 ---
 
-## 🛠️ Technical Deep Dive
-
-### **OOP Principles Applied:**
-* **Encapsulation:** Data is protected within classes like `Room` and `Guest`.
-* **Abstraction:** Complex reservation logic is hidden behind simple method calls.
-* **Association:** Strong relationships between `Hotel`, `Room`, and `Reservation` objects.
-
-### **Class Breakdown:**
-| Class File | Responsibility |
-| :--- | :--- |
-| `Hotel_Chain.java` | Acts as the parent container for multiple hotels. |
-| `Hotel.java` | Contains room lists and hotel-specific metadata. |
-| `Room.java` | Defines individual room attributes (Number, Status, Type). |
-| `Guest.java` | Stores personal information of the visitors. |
-| `Reservation.java` | The bridge that connects a Guest to a Room. |
-| `ReserverPayer.java` | Handles the financial/booking entity details. |
+## 🛠️ Tech Stack & Methodology
+* **Language:** Java (JDK 8+)
+* **Testing Pattern:** AAA (Arrange, Act, Assert)
+* **Data Structures:** Java Collections (ArrayList, Enums)
 
 ---
 
-## 📂 Project Structure
+## 📁 File Structure
 ```text
 Hotel-Reservation-System/
-├── Guest.java
-├── Hotel.java
-├── Hotel_Chain.java
-├── How_Many.java
-├── Main.java          <-- Entry Point
-├── Reservation.java
-├── ReserverPayer.java
-├── Room.java
-└── RoomType.java
-```
-⚙️ How to Run
-Clone the repository:
+├── src/ (Core Logic)
+│   ├── Guest.java, Hotel.java, Hotel_Chain.java
+│   ├── Room.java, RoomType.java, Reservation.java
+│   └── Main.java
+├── tests/ (AAA Testing Suite)
+│   ├── GuestTest.java, RoomTest.java
+│   ├── HotelChainTest.java, ReserverPayerTest.java
+│   ├── RoomTypeTest.java, How_ManyTest.java
+│   └── IntegrationTest.java
+└── README.md
+🧪 Testing (AAA Methodology)
+Har functionality ko test karne ke liye teen steps follow kiye gaye hain:
 
+Arrange: Test ke liye environment aur objects tayyar karna.
 
+Act: Specific functionality ko execute karna.
+
+Assert: Result ko verify karna ke wo expected output ke mutabiq hai ya nahi.
+
+How to Run Tests:
+Apne terminal mein folder open karein.
+
+Compile karein: javac *Test.java
+
+Run karein: java IntegrationTest (Ya koi bhi specific test file)
+
+⚙️ Setup & Execution
+Clone the Repo:
+
+Bash
 
 git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
-Navigate to the folder:
+Compile Core Files:
 
+Bash
 
+javac Main.java
+Run Application:
 
-cd Hotel-Reservation-System
-Compile the Java files:
-
-javac *.java
-Run the application:
-
-
+Bash
 
 java Main
+📊 Class Relationships
+Hotel_Chain ➡️ contains multiple Hotels
+
+Hotel ➡️ contains multiple Rooms
+
+Reservation ➡️ links a Guest to a Room
