@@ -1,44 +1,72 @@
-# 🏨 Hotel Reservation System
+# 🏨 Hotel Reservation System (OOP Logic)
 
-A desktop-based **Hotel Management System** built using **Java**, **Swing**, and **MySQL**. This application helps hotel staff manage room bookings, customer details, and room availability efficiently.
-
----
-
-## 🚀 Features
-* **User Login:** Secure login for admin/staff.
-* **Add Rooms:** Capability to add new rooms with details (Price, Type, Cleaning Status).
-* **Customer Registration:** Register new guests with their ID and contact info.
-* **Check-In/Check-Out:** Manage guest arrivals and departures.
-* **Room Management:** Update room status (Available/Occupied).
-* **Database Integration:** Persistent storage using MySQL.
+A comprehensive **Object-Oriented Programming (OOP)** implementation of a Hotel Management System. This project is built using **Java** and focuses on the logical structure of managing hotel chains, room allocations, and guest bookings using in-memory data structures.
 
 ---
 
-## 🛠️ Tech Stack
-* **Language:** Java (JDK 8 or above)
-* **GUI:** Java Swing & AWT
-* **Database:** MySQL
-* **Drivers:** MySQL Connector/J
+## 📖 Project Overview
+Unlike typical database-driven apps, this project demonstrates how to structure complex real-world systems using Java classes and relationships. It manages everything from individual rooms to entire hotel chains.
 
 ---
 
-## 📁 Project Structure
-* `src/`: Contains all Java source files.
-    * `Conn.java`: Database connection logic.
-    * `Login.java`: Authentication screen.
-    * `Dashboard.java`: Main navigation menu.
-    * `AddRooms.java` / `CustomerInfo.java`: Management forms.
-* `icons/`: Images used in the UI.
+## 🚀 Key Features
+* **Hierarchical Management:** Manages multiple hotels under a single `Hotel_Chain`.
+* **Room Classification:** Support for various `RoomTypes` (Single, Double, Suite, etc.).
+* **Guest & Payer Tracking:** Separate logic for `Guest` details and the `ReserverPayer` responsible for billing.
+* **Reservation System:** Core engine to link guests with specific rooms and dates.
+* **Dynamic Capacity:** Uses Java Collections to handle data during the application lifecycle.
 
 ---
 
-## ⚙️ Setup & Installation
+## 🛠️ Technical Deep Dive
 
-### 1. Database Setup
-1. Open MySQL and create a database named `hotelmanagementsystem`.
-2. Run the SQL queries (provided in the project or create tables for `login`, `room`, `driver`, and `customer`).
+### **OOP Principles Applied:**
+* **Encapsulation:** Data is protected within classes like `Room` and `Guest`.
+* **Abstraction:** Complex reservation logic is hidden behind simple method calls.
+* **Association:** Strong relationships between `Hotel`, `Room`, and `Reservation` objects.
 
-### 2. Configure Connection
-Open `src/Conn.java` and update your MySQL credentials:
-```java
-c = DriverManager.getConnection("jdbc:mysql:///hotelmanagementsystem", "root", "YOUR_PASSWORD");
+### **Class Breakdown:**
+| Class File | Responsibility |
+| :--- | :--- |
+| `Hotel_Chain.java` | Acts as the parent container for multiple hotels. |
+| `Hotel.java` | Contains room lists and hotel-specific metadata. |
+| `Room.java` | Defines individual room attributes (Number, Status, Type). |
+| `Guest.java` | Stores personal information of the visitors. |
+| `Reservation.java` | The bridge that connects a Guest to a Room. |
+| `ReserverPayer.java` | Handles the financial/booking entity details. |
+
+---
+
+## 📂 Project Structure
+```text
+Hotel-Reservation-System/
+├── Guest.java
+├── Hotel.java
+├── Hotel_Chain.java
+├── How_Many.java
+├── Main.java          <-- Entry Point
+├── Reservation.java
+├── ReserverPayer.java
+├── Room.java
+└── RoomType.java
+⚙️ How to Run
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
+Navigate to the folder:
+
+Bash
+
+cd Hotel-Reservation-System
+Compile the Java files:
+
+Bash
+
+javac *.java
+Run the application:
+
+Bash
+
+java Main
