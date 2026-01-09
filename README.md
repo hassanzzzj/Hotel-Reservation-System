@@ -49,24 +49,24 @@ Hotel-Reservation-System/
 ├── ReserverPayer.java
 ├── Room.java
 └── RoomType.java
+```
 ⚙️ How to Run
 Clone the repository:
 
-Bash
+
 
 git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
 Navigate to the folder:
 
-Bash
+
 
 cd Hotel-Reservation-System
 Compile the Java files:
 
-Bash
-
 javac *.java
 Run the application:
 
-Bash
+
 
 java Main
+```
