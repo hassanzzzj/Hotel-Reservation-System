@@ -51,7 +51,7 @@ Run karein: java IntegrationTest (Ya koi bhi specific test file)
 
 ⚙️ Setup & Execution
 Clone the Repo:
-
+```
 Bash
 
 git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
@@ -63,6 +63,7 @@ Run Application:
 
 
 java Main
+```
 📊 Class Relationships
 Hotel_Chain ➡️ contains multiple Hotels
 
