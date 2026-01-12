@@ -3,6 +3,7 @@ package CCP;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Hotel {
     private String name; // UML Attribute: Name
     private List<Room> rooms; // Aggregation relationship with Room

@@ -1,6 +1,7 @@
 package CCP;
 import java.util.Date;
 
+
 public class Main {
     public static void main(String[] args) {
         try {
@@ -17,8 +18,7 @@ public class Main {
             // 3. ReserverPayer (Jo paise dega) create karna
             // UML: HotelChain creates ReserverPayer
             myChain.createReserverPayer("P-5501", "1234567812345678");
-            
-          
+
             ReserverPayer payer = ReserverPayer.create("P-5501", "1234567812345678");
 
             // 4. Reservation banana (Dates set karna)
@@ -26,7 +26,7 @@ public class Main {
             Date nextWeek = new Date(today.getTime() + (7 * 24 * 60 * 60 * 1000));
             
             // UML: Reservation link with RoomType and Quantity (HowMany)
-            Reservation myRes = Reservation.create(today, nextWeek, luxury, 1);            
+            Reservation myRes = Reservation.create(today, nextWeek, luxury, 1);
             // 5. Payer ko Reservation ke saath link karna
             myChain.makeReservation(payer, myRes);
 
@@ -42,7 +42,8 @@ public class Main {
             System.out.println("Total Cost per night: " + luxury.getCost());
             System.out.println("Status: System Running Successfully!");
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
     }
