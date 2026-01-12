@@ -3,13 +3,11 @@ package CCP;
 
 public class Room  {
     private int number;
-    private RoomType type;   // Relationship: 1 Room has 1 RoomType 
-
+    private RoomType type;   // Relationship: 1 Room has 1 RoomType
     public Room(int number, RoomType type) {
         // Defensive Programming [cite: 25, 28]
         if (number <= 0) throw new IllegalArgumentException("Invalid room number");
         if (type == null) throw new NullPointerException("RoomType cannot be null");
-        
         this.number = number;
         this.type = type;
     }

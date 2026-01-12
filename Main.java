@@ -41,7 +41,6 @@ public class Main {
             System.out.println("Room Type: " + luxury.getKind());
             System.out.println("Total Cost per night: " + luxury.getCost());
             System.out.println("Status: System Running Successfully!");
-
         }
         catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
