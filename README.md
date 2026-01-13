@@ -28,6 +28,7 @@ Open your terminal or command prompt and run:
 Bash
 
 git clone https://github.com/hassanzzzj/Hotel-Reservation-System.git
+
 Step 2: Open in IDE 💻
 Open VS Code, IntelliJ IDEA, or Eclipse.
 
