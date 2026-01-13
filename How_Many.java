@@ -1,4 +1,3 @@
-package CCP;
 
 public class How_Many {
     private int number; // UML: number: Integer 

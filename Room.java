@@ -1,4 +1,3 @@
-package CCP;
 
 
 public class Room  {

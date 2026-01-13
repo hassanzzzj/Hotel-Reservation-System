@@ -1,4 +1,4 @@
-package CCP;
+
 
 public class ReserverPayer {
    // UML Attributes
@@ -9,7 +9,7 @@ public class ReserverPayer {
     private Reservation reservation;
 
     // Private constructor as per 'create()' logic
-    private ReserverPayer(String id, String creditCardDetails) {
+    public ReserverPayer(String id, String creditCardDetails) {
         this.id = id;
         this.creditCardDetails = creditCardDetails;
     }

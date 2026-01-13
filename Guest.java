@@ -1,22 +1,24 @@
-package CCP;
+
 
 public class Guest {
-    private String name; 
-    private String addressDetails;  
+    private String name;
+    private String addressDetails;
 
-    // Constructor (UML: create()) 
-    private Guest(String name, String addressDetails) {
+    public Guest() {
+    }
+    // Constructor (UML: create())
+    public Guest(String name, String addressDetails) {
         this.name = name;
         this.addressDetails = addressDetails;
     }
     public String getName() {
         return name;
-    }   
+    }
     public String getAddressDetails() {
         return addressDetails;
     }
     
-    public static Guest create(String name, String addressDetails) {
+    public Guest create(String name, String addressDetails) {
         return new Guest(name, addressDetails);
     }
 }

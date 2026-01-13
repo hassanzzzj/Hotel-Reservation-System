@@ -1,4 +1,4 @@
-package CCP;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -29,6 +29,9 @@ public class Reservation {
         this.number = num;
         this.roomType = type;
         this.rooms = new ArrayList<>();
+    }
+    public Reservation(long l) {
+        //TODO Auto-generated constructor stub
     }
     public static Reservation create(Date start, Date end, RoomType type, int num) {
         return new Reservation(start, end, type, num);

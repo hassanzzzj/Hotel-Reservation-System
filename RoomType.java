@@ -1,4 +1,4 @@
-package CCP;
+
 
 
 public class RoomType {

@@ -1,4 +1,4 @@
-package CCP;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +23,9 @@ public class Hotel_Chain {
         // ReserverPayer ka create method call ho raha hai
         ReserverPayer newPayer = ReserverPayer.create(id, card);
         this.payers.add(newPayer);
+    }
+    public void addPayer(ReserverPayer payer) {
+        this.payers.add(payer);
     }
 
     // UML Operation: makeReservation()
