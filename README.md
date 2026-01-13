@@ -36,41 +36,60 @@ Hotel-Reservation-System/
 │   └── ... (Test classes for each domain object)
 └── README.
 ```
+---
 
-🛠️ Installation & Setup
-Clone the Repository:
+## 🛠️ Installation & Setup
 
-Bash
+Follow these steps to set up the project on your local environment:
 
-git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
-Import Project: Open the folder in VS Code or IntelliJ IDEA.
+1.  **Clone the Repository** 📂
+    ```bash
+    git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
+    ```
+2.  **Import Project** 💻
+    * Open **VS Code** or **IntelliJ IDEA**.
+    * Select `File > Open Folder` and choose the cloned directory.
+3.  **Configure SDK** ⚙️
+    * Ensure **JDK 11 or higher** is installed.
+    * In VS Code, set your `java.configuration.runtimes` to point to your JDK path.
+4.  **Add Dependencies** 🧪
+    * Add **JUnit 5.x** library to your Project Build Path to enable unit testing functionality.
 
-Configure SDK: Ensure JDK 11+ is installed and configured.
+---
 
-Dependencies: Add the JUnit 5 library to your project's build path.
+## 🧪 Testing Methodology (AAA Pattern)
 
-🧪 Testing Methodology (AAA Pattern)
-Every unit test follows the strict Arrange-Act-Assert structure:
-
-Arrange: Set up the test objects and data.
-
-Act: Invoke the target method.
-
-Assert: Verify the outcome against expected results.
-
-📊 Documentation Guide (For Reports)
-Use these descriptions for your report screenshots:
-
-Component	Explanation
-Main Execution	Shows system initialization, hotel setup, and successful reservation flow.
-Domain Logic	Demonstrates defensive checks (e.g., preventing negative room costs).
-Test Suite	Shows green checkmarks for all unit tests, confirming functional correctness.
-
-Export to Sheets
-
-🛡️ License
-Distributed under the MIT License. See LICENSE for more information.
-
-Developed with ❤️ by [Hassanzzzj]
+We follow the industry-standard **Arrange-Act-Assert** pattern to ensure each unit test is readable and maintainable.
 
 
+
+| Phase | Description |
+| :--- | :--- |
+| **Arrange** 🏗️ | Initialize objects, mock dependencies, and prepare input data. |
+| **Act** ⚡ | Execute the specific method or function being tested. |
+| **Assert** ✅ | Verify that the actual output matches the expected result. |
+
+---
+
+## 📊 Documentation Guide (For Reports)
+
+If you are using this project for a formal report, use the following descriptions for your screenshots to provide a professional context:
+
+> [!TIP]
+> **Main Execution:** Shows system initialization, hotel setup, and successful reservation flow.
+> 
+> **Domain Logic:** Demonstrates defensive checks (e.g., preventing negative room costs or invalid dates).
+> 
+> **Test Suite:** Displays green checkmarks for all unit tests, confirming 100% functional correctness.
+
+---
+
+## 🛡️ License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+<p align="center">
+  <b>Developed with ❤️ by <a href="https://github.com/hassanzzzj">Hassan</a></b>
+</p>
