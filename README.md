@@ -1,79 +1,37 @@
-🏨 Hotel Reservation System - Project Documentation
+# 🏨 Hotel Reservation System (CCP)
 
-📜 Project Overview
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-This project is a Complex Computing Problem (CCP) focused on developing a medium-sized Hotel Reservation System. The system is built by translating a detailed UML class diagram into high-quality Java code while adhering to strict software engineering standards.
-
-
-🚀 Key Features & Implementation
-
-
-UML Implementation: All classes, attributes, and methods (like makeReservation, checkInGuest) are implemented exactly as specified.
-
-
-Clean Code: Follows industry standards with meaningful naming, focused methods, and zero code smells. 🧹
+## 📜 Project Overview
+This project is a **Complex Computing Problem (CCP)** focused on developing a scalable Hotel Reservation System. The core objective is to translate a detailed **UML Class Diagram** into high-quality Java code, ensuring that all architectural relationships (Aggregation, Composition, and Association) are accurately represented.
 
 
 
-Defensive Programming: Includes robust input validation and exception handling to prevent illegal object states. 🛡️
+---
 
+## 🚀 Key Features
+- **UML-to-Code Fidelity:** Precise implementation of classes like `Hotel_Chain`, `Room`, `Reservation`, and `ReserverPayer`.
+- **Defensive Programming:** Robust validation logic to prevent illegal states (e.g., negative costs, null objects).
+- **Unit Testing:** 100% verification of domain logic using **JUnit 5** and the **AAA (Arrange-Act-Assert)** pattern.
+- **Relationship Management:** Handles complex interactions between guest occupancy, room types, and chain-level reservations.
 
+---
 
-Unit Testing: Comprehensive test suite using JUnit 5 with the AAA (Arrange-Act-Assert) pattern. ✅
-
-
-🛠️ How to Build and Run the Project
-
-
-Follow these steps to get the system running on your local machine:
-
-
-Step 1: Clone the Repository 📂
-Open your terminal or command prompt and run:
-
-Bash
-
-git clone https://github.com/hassanzzzj/Hotel-Reservation-System.git
-
-Step 2: Open in IDE 💻
-
-Open VS Code, IntelliJ IDEA, or Eclipse.
-
-Import the project as a Java Project.
-
-Ensure JDK 11 (or higher) is configured in your IDE settings.
-
-Step 3: Add JUnit Library 🧪
-
-Since the project uses unit tests, make sure JUnit 5 is added to your project's build path (usually handled automatically if it's a Maven/Gradle project).
-
-Step 4: Run the Main Program ▶️
-
-Locate the file containing the public static void main(String[] args) method (usually in Main.java).
-
-Right-click the file and select Run.
-
-The console will show object creation, room bookings, and system interactions.
-
-Step 5: Execute Tests 🔍
-
-Navigate to the Test folder.
-
-Right-click and select "Run All Tests".
-
-Ensure the "Test Results" panel shows all tests passed successfully.
-
-
-📊 Report Content (Brief Explanations for Screenshots)
-
-Jab aap report mein screenshots lagayein, to unke niche ye choti explanations likh sakte hain:
-
-
-Main Method Screenshot: "This screenshot shows the entry point of the application where we initialize the HotelChain, create Hotel instances, and set up various Room types."
-
-
-Execution Output Screenshot: "The console output demonstrates a successful use case: creating a customer, checking room availability, and finalizing a reservation."
-
-
-
-Test Results Screenshot: "This confirms that all domain classes are verified against boundary conditions and invalid inputs, ensuring 100% functional correctness."
+## 📂 Project Structure
+```text
+Hotel-Reservation-System/
+├── src/
+│   ├── CCP/                 # Root Package
+│   │   ├── Main.java        # Entry Point
+│   │   ├── Hotel_Chain.java # Controller Class
+│   │   ├── Hotel.java
+│   │   ├── Room.java
+│   │   ├── RoomType.java
+│   │   ├── Reservation.java
+│   │   ├── ReserverPayer.java
+│   │   └── How_Many.java    # Value Object
+├── tests/                   # JUnit Test Suite
+│   └── ... (Test classes for each domain object)
+└── README.md
