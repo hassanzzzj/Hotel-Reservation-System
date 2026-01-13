@@ -34,4 +34,43 @@ Hotel-Reservation-System/
 │   │   └── How_Many.java    # Value Object
 ├── tests/                   # JUnit Test Suite
 │   └── ... (Test classes for each domain object)
-└── README.md
+└── README.
+```
+
+🛠️ Installation & Setup
+Clone the Repository:
+
+Bash
+
+git clone [https://github.com/hassanzzzj/Hotel-Reservation-System.git](https://github.com/hassanzzzj/Hotel-Reservation-System.git)
+Import Project: Open the folder in VS Code or IntelliJ IDEA.
+
+Configure SDK: Ensure JDK 11+ is installed and configured.
+
+Dependencies: Add the JUnit 5 library to your project's build path.
+
+🧪 Testing Methodology (AAA Pattern)
+Every unit test follows the strict Arrange-Act-Assert structure:
+
+Arrange: Set up the test objects and data.
+
+Act: Invoke the target method.
+
+Assert: Verify the outcome against expected results.
+
+📊 Documentation Guide (For Reports)
+Use these descriptions for your report screenshots:
+
+Component	Explanation
+Main Execution	Shows system initialization, hotel setup, and successful reservation flow.
+Domain Logic	Demonstrates defensive checks (e.g., preventing negative room costs).
+Test Suite	Shows green checkmarks for all unit tests, confirming functional correctness.
+
+Export to Sheets
+
+🛡️ License
+Distributed under the MIT License. See LICENSE for more information.
+
+Developed with ❤️ by [Hassanzzzj]
+
+
